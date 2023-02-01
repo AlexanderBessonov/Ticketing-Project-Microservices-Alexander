@@ -11,10 +11,12 @@ spring:
           uri: https://github.com/AlexanderBessonov/Ticketing-Project-Microservices-Config-Alexander
           default-label: master
           username: AlexanderBessonov
-          password: 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
+          #password: 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
+          password:'{cipher}6f90a52543a0aaff1c4a6519e21fa716d338dc3dba1af3a23d24b28075952d5b33b7f06ea5ea8063040fc63a523ce68e69175dc4bf8367482f7a71daa714d22b'
       fail-fast: true
         #native:
           #search-locations: classpath:/config
-
+encrypt:
+  key: cydeo
 server:
   port: 8888
